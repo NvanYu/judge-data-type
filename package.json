@@ -1,0 +1,11 @@
+{
+  "name": "judge-data-type",
+  "version": "1.1.1",
+  "description": "A module for judging-data-type",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JerryYu",
+  "license": "MIT"
+}
