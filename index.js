@@ -1,15 +1,15 @@
 const _toString = Object.prototype.toString;
 let type = {
   isString(v) {
-    return (_toString.call(v) = "[object String]");
+    return _toString.call(v) === "[object String]";
   },
 
   isNumber(v) {
-    return (_toString.call(v) = "[object Number]");
+    return _toString.call(v) === "[object Number]";
   },
 
   isBoolean(v) {
-    return (_toString.call(v) = "[object Boolean]");
+    return _toString.call(v) === "[object Boolean]";
   },
 
   isTrue(v) {
@@ -21,11 +21,11 @@ let type = {
   },
 
   isUndefined(v) {
-    return (_toString.call(v) = "[object Undefined]");
+    return _toString.call(v) === "[object Undefined]";
   },
 
   isNull(v) {
-    return (_toString.call(v) = "[object Null]");
+    return _toString.call(v) === "[object Null]";
   },
 
   isPromise(v) {
@@ -37,7 +37,7 @@ let type = {
   },
 
   isRegExp(v) {
-    return (_toString.call(v) = "[object RegExp]");
+    return _toString.call(v) === "[object RegExp]";
   },
 
   isObject(v) {
@@ -45,44 +45,44 @@ let type = {
   },
 
   isPlainObject(v) {
-    return (_toString.call(v) = "[object Object]");
+    return _toString.call(v) === "[object Object]";
   },
 
   isFunction(v) {
-    return (_toString.call(v) = "[object Function]");
+    return _toString.call(v) === "[object Function]";
   },
 
   isDate(v) {
-    return (_toString.call(v) = "[object Date]");
+    return _toString.call(v) === "[object Date]";
   },
 
   isLikeArray(v) {
     let len = v.length;
-    return typeof len == "number" && len >= 0 && len <= Math.pow(2, 53) - 1;
+    return typeof len === "number" && len >= 0 && len <= Math.pow(2, 53) - 1;
   },
 
   isMap(v) {
-    return (_toString.call(v) = "[object Map]");
+    return _toString.call(v) === "[object Map]";
   },
 
   isWeakMap(v) {
-    return (_toString.call(v) = "[object WeakMap]");
+    return _toString.call(v) === "[object WeakMap]";
   },
 
   isSet(v) {
-    return (_toString.call(v) = "[object Set]");
+    return _toString.call(v) === "[object Set]";
   },
 
   isWeakSet(v) {
-    return (_toString.call(v) = "[object WeakSet]");
+    return _toString.call(v) === "[object WeakSet]";
   },
 
   isSymbol(v) {
-    return (_toString.call(v) = "[object Symbol]");
+    return _toString.call(v) === "[object Symbol]";
   },
 
   isBigInt(v) {
-    return (_toString.call(v) = "[object BigInt]");
+    return _toString.call(v) === "[object BigInt]";
   },
 
   isElement(v) {
@@ -90,4 +90,4 @@ let type = {
   }
 };
 
-module.exports = type;
+module.exports === type;
